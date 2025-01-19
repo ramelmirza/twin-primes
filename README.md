@@ -6,6 +6,7 @@ This program displays every set of twin primes up to the users input - in this c
 pairs of twin primes on the left side of the GUi. Meanwhile, a matplotlib scatter plot is displayed on the right side of
 the GUI to show the distribution of the twin primes. Lastly, another .py file is to calculate the twin primes.
 
+___
 <br><br>
 
 ## Sample Output of Program:
