@@ -1,22 +1,23 @@
 """
-This script calculates the twin primes up to the users input (which is defined by a slider)
+This script finds the prime numbers using the sieve of eratosthenes and finds the sets of twin primes
 Date: 18-01-2025
-Version: 1.00
+Version: 1.01
 """
 
-def sieve_of_eratosthenes(user):
+
+def sieve_of_eratosthenes(slider=0):
     """
     Uses the Sieve of Eratosthenes method of finding a set of prime numbers
-    :param user: users input from slider
+    :param slider: users input from slider
     :return: a list containing the set of primes number up to user
     """
-    primes = [True for i in range(user + 1)]
+    primes = [True for _ in range(slider + 1)]
     i = 2
     # squaring avoids checking the same number
     # only need to check up to the sqrt of the user because any pf > sqrt of n would already have been found
-    while i * i <= user:
+    while i * i <= slider:
         if primes[i]:
-            for j in range(i * i, user + 1, i):
+            for j in range(i * i, slider + 1, i):
                 primes[j] = False
         i += 1
 
@@ -27,6 +28,7 @@ def sieve_of_eratosthenes(user):
             values.append(i + 2)  # adding 2 due to 0 and 1
 
     return values
+
 
 def twin_primes(values):
     """
