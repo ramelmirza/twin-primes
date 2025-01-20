@@ -5,4 +5,4 @@ This program uses matplotlib to plot the 'distribution' of the sets of twin prim
 prime numbers, then using a twin_primes function to list out all the twin primes up to 'n'
 ___
 ## Sample Output of Program:
-![twin primes](Screenshot 2025-01-19 210329.png)
+![twin primes](Screenshot%202025-01-19%20210329.png)
